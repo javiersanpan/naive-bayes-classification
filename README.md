@@ -1,16 +1,16 @@
-Naïve Bayes' classification algorithm
+# Naïve Bayes' classification algorithm
 
 *Author: Francisco Javier Sánchez Panduro\
 Supervised by Professor Doctor Brenda García Maya\
 Monterrey Institute of Tecnology and Higher Studies\
 21 of August 2023*
 
-# Introduction
+## Introduction
 According to Saritas and Yasar (2019), the Naive Bayes algorithm is a probability classifier that calculates probability by counting the frequency and combination of values in a given data set. It is based on Bayes' Theorem and makes the naive assumption that all variables are independant. 
 
 In this document we aim to apply Naive Bayes' classifcation algorithm to predict using age and estimated salary weather they could be a potential buyer. 
 
-# Bayes theorem
+## Bayes theorem
 
 According to Saritas and Yasar (2019), Bayes' theorem goes as follows:
 
@@ -27,9 +27,9 @@ $P(B|A)$ is the probability of occurrence of event $B$ when event $A$ occurs.
 
 Naive Bayes is employed to generate a confusion matrix, wherein the accurately predicted values are juxtaposed against the actual values. In this matrix, the diagonal elements signify the accurate predictions, while the remaining values indicate instances of incorrect predictions.
 
-# Application
+## Application
 
-## Libraries to be used
+### Libraries to be used
 
 
 ```python
@@ -41,7 +41,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 ```
 
-## Data preparation
+### Data preparation
 
 
 ```python
@@ -131,7 +131,7 @@ df.head()
 x_train, x_test, y_train, y_test = train_test_split(df.iloc[:, 2:4], df.iloc[:, 4], test_size=0.2)
 ```
 
-## Applying naive bayes and creating the confussion matrix
+### Applying naive bayes and creating the confussion matrix
 
 
 ```python
@@ -183,6 +183,6 @@ plt.show()
     
 
 
-# References
+## References
 
 Saritas, M. M., & Yasar, A. (2019). Performance Analysis of ANN and Naive Bayes Classification Algorithm for Data Classification. International Journal of Intelligent Systems and Applications in Engineering, 7(2), 88–91. https://doi.org/10.18201//ijisae.2019252786
